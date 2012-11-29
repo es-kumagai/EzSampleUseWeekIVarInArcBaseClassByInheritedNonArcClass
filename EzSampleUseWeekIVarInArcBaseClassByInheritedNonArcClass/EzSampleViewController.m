@@ -17,13 +17,40 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+	NSLog(@"B: View Did Load");
+	_value = [[EzSampleValue alloc] init];
+	_weakValue = _value;
 }
 
-- (void)didReceiveMemoryWarning
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	[super viewWillAppear:animated];
+
+	// ARC で Weak を参照するとオートリリースプールに入る。
+	NSLog(@"B: Weak Value = %p", _weakValue);
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+	[super viewDidAppear:animated];
+	
+	NSLog(@"B: View Did Appear");
+	_value = nil;
+	[self test:self];
+}
+
+- (void)test:(id)sender
+{
+	NSLog(@"-------------------------------------");
+	NSLog(@"WeakValue=%@ (%p)", [_weakValue value], _weakValue);
+	NSLog(@"Value=%@ (%p)", [_value value], _value);
+}
+
+- (void)doRelease:(id)sender
+{
+	NSLog(@"-------------------------------------");
+	_value = nil;
 }
 
 @end

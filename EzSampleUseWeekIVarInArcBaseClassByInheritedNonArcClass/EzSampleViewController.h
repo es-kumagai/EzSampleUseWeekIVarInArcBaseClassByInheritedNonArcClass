@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EzSampleValue.h"
 
 @interface EzSampleViewController : UIViewController
+{
+@protected
+	__strong EzSampleValue* _value;
+	__weak EzSampleValue* _weakValue;
+}
+
+- (IBAction)test:(id)sender;
+- (IBAction)doRelease:(id)sender;
 
 @end

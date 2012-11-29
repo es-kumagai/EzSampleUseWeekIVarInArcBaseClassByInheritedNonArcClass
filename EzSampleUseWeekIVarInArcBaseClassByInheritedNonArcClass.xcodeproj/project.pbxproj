@@ -18,6 +18,8 @@
 		B1A18D3016672576005E379D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B1A18D2F16672576005E379D /* Default-568h@2x.png */; };
 		B1A18D3316672576005E379D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1A18D3116672576005E379D /* MainStoryboard.storyboard */; };
 		B1A18D3616672576005E379D /* EzSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A18D3516672576005E379D /* EzSampleViewController.m */; };
+		B1A18D3E16672599005E379D /* EzSampleNonARCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A18D3D16672599005E379D /* EzSampleNonARCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B1A18D41166726C9005E379D /* EzSampleValue.m in Sources */ = {isa = PBXBuildFile; fileRef = B1A18D40166726C9005E379D /* EzSampleValue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		B1A18D3216672576005E379D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B1A18D3416672576005E379D /* EzSampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EzSampleViewController.h; sourceTree = "<group>"; };
 		B1A18D3516672576005E379D /* EzSampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EzSampleViewController.m; sourceTree = "<group>"; };
+		B1A18D3C16672599005E379D /* EzSampleNonARCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EzSampleNonARCViewController.h; sourceTree = "<group>"; };
+		B1A18D3D16672599005E379D /* EzSampleNonARCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EzSampleNonARCViewController.m; sourceTree = "<group>"; };
+		B1A18D3F166726C9005E379D /* EzSampleValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EzSampleValue.h; sourceTree = "<group>"; };
+		B1A18D40166726C9005E379D /* EzSampleValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EzSampleValue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +94,10 @@
 				B1A18D3116672576005E379D /* MainStoryboard.storyboard */,
 				B1A18D3416672576005E379D /* EzSampleViewController.h */,
 				B1A18D3516672576005E379D /* EzSampleViewController.m */,
+				B1A18D3C16672599005E379D /* EzSampleNonARCViewController.h */,
+				B1A18D3D16672599005E379D /* EzSampleNonARCViewController.m */,
+				B1A18D3F166726C9005E379D /* EzSampleValue.h */,
+				B1A18D40166726C9005E379D /* EzSampleValue.m */,
 				B1A18D2016672576005E379D /* Supporting Files */,
 			);
 			path = EzSampleUseWeekIVarInArcBaseClassByInheritedNonArcClass;
@@ -177,6 +187,8 @@
 				B1A18D2616672576005E379D /* main.m in Sources */,
 				B1A18D2A16672576005E379D /* EzSampleAppDelegate.m in Sources */,
 				B1A18D3616672576005E379D /* EzSampleViewController.m in Sources */,
+				B1A18D3E16672599005E379D /* EzSampleNonARCViewController.m in Sources */,
+				B1A18D41166726C9005E379D /* EzSampleValue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
